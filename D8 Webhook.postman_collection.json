@@ -1,0 +1,40 @@
+{
+	"info": {
+		"name": "D8 Webhook",
+		"_postman_id": "0734b484-5c7e-241e-750e-b31b95056ce8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "D8 Webhook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\":\"My Title\",\"something\":\"My description\"}"
+				},
+				"url": {
+					"raw": "http://mysite.test/d8webhook/9490f7bb1b3ded332e532be33",
+					"protocol": "http",
+					"host": [
+						"mysite",
+						"test"
+					],
+					"path": [
+						"d8webhook",
+						"9490f7bb1b3ded332e532be33"
+					]
+				},
+				"description": "Post a payload to our Drupal 8 controller."
+			},
+			"response": []
+		}
+	]
+}

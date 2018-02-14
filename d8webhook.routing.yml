@@ -1,0 +1,8 @@
+
+d8webhook.webhook_controller_capture:
+  path: '/d8webhook/{token}'
+  defaults:
+    _controller: '\Drupal\d8webhook\Controller\WebhookController::capture'
+    _title: 'Webhook Controller'
+  requirements:
+    _custom_access: '\Drupal\d8webhook\Controller\WebhookController::authorize'

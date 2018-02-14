@@ -1,0 +1,5 @@
+name: D8 Webhook
+type: module
+description: Implements an example webhook in Drupal 8
+core: 8.x
+package: Custom
