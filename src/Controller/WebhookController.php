@@ -41,10 +41,11 @@ class WebhookController extends ControllerBase {
    *
    * Implementing https://www.drupal.org/project/key
    * is a stronger approach.
+   * In this example, you would need $config['d8webhooks']['token'] = 'yourtokeninsettingsphp'; in settings.php.
    *
    * @var string
    */
-  protected $secret = '9490f7bb1b3ded332e532be33';
+  protected $secret = \Drupal::service('config.factory')->get('d8webhooks')->get('token');
 
   /**
    * Constructs a new WebhookController object.
